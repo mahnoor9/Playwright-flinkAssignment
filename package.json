@@ -1,0 +1,17 @@
+{
+  "name": "weatherapptest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test testCaseOne.test.ts --headed --project=chromium&&npx playwright show-report"
+  },
+  "author": "Mah Noor",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.18.1"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.178"
+  }
+}
