@@ -15,6 +15,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "install"
+          command: "npm i"
+      - run:
           name: "test"
           command: "npx playwright test testCaseOne.test.ts --headed --project=chromium&&npx playwright show-report"
 
